@@ -301,32 +301,3 @@ vehicle_failure_survival_project/
 ├── Makefile
 └── README.md
 ```
-
-## Production hardening roadmap
-
-This repository is intentionally production-oriented, but it is still a portfolio system. A real enterprise rollout should add:
-
-1. authenticated API access and authorization
-2. managed model registry and artifact storage
-3. scheduled batch scoring through a workflow orchestrator
-4. feature store or governed feature pipeline
-5. outcome feedback once failures mature
-6. rolling calibration and C-index monitoring
-7. alerting on data drift and performance degradation
-8. blue/green or canary model releases
-9. audit logging and model governance approval
-10. retraining policy triggered by data volume and performance decay
-
-## Resume-ready positioning
-
-Use only after you have personally run and understood the project:
-
-> **Vehicle Failure Survival Risk Platform:** Built an end-to-end statistical reliability platform on 8,000 synthetic commercial-vehicle component histories using Kaplan-Meier analysis, Cox proportional hazards and Weibull AFT models, explicitly modeling right censoring and evaluating discrimination, calibration and proportional-hazards assumptions. Productionized conditional 30/60/90-day risk scoring through FastAPI, Docker, batch inference, CI and drift monitoring.
-
-A shorter version:
-
-> Built a survival-analysis failure-risk platform using Cox PH and Weibull AFT models, achieving ~0.80 holdout C-index on 8,000 right-censored synthetic vehicle histories; served calibrated 30/60/90-day conditional risk through FastAPI with Docker, CI, batch scoring and drift monitoring.
-
-## Important honesty note
-
-The data and performance in this project are synthetic. Do not place this under an employer's experience section or imply that these results were achieved on confidential OEM data. Present it as a portfolio project demonstrating statistical modeling and production ML engineering.
