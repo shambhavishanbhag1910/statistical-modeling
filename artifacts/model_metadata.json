@@ -1,0 +1,28 @@
+{
+  "model_version": "1.0.0",
+  "selected_model": "cox_ph",
+  "selection_reason": "Cox PH and Weibull AFT had effectively tied holdout discrimination and calibration; Cox PH was selected for stakeholder-friendly hazard-ratio interpretation.",
+  "features": [
+    "monthly_km",
+    "engine_hours_per_month",
+    "load_factor",
+    "temperature_exposure",
+    "prior_repairs",
+    "service_delay_days",
+    "route_severity",
+    "preventive_maintenance_score",
+    "vehicle_class_Light",
+    "vehicle_class_Medium"
+  ],
+  "evaluation_horizons_months": [
+    12.0,
+    24.0,
+    36.0
+  ],
+  "training_data": "synthetic commercial-vehicle component histories",
+  "important_limitations": [
+    "Synthetic data does not establish real-world OEM model performance.",
+    "The Cox PH residual correlation table is a diagnostic heuristic, not a full formal PH test.",
+    "The three-point Brier average is reported as an integrated-Brier proxy, not a continuous-time IBS integral."
+  ]
+}

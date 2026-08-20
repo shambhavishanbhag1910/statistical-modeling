@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.DS_Store
+*.log
+artifacts/*.pkl
+reports/drift_demo.json
+
+docs
+COMMIT_MESSAGE.txt

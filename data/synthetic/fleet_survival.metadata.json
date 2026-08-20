@@ -1,0 +1,26 @@
+{
+  "dataset_type": "synthetic",
+  "seed": 42,
+  "n_assets": 8000,
+  "event_rate": 0.439375,
+  "censoring_rate": 0.5606249999999999,
+  "weibull_shape": 2.0,
+  "baseline_scale_months": 75.0,
+  "ground_truth": {
+    "higher_hazard": [
+      "monthly_km",
+      "engine_hours_per_month",
+      "load_factor",
+      "temperature_exposure",
+      "prior_repairs",
+      "service_delay_days",
+      "route_severity",
+      "Heavy vehicle class"
+    ],
+    "protective": [
+      "preventive_maintenance_score",
+      "Light vehicle class"
+    ]
+  },
+  "disclaimer": "Synthetic portfolio data only. It contains no proprietary OEM, customer, vehicle, warranty, or manufacturing information."
+}

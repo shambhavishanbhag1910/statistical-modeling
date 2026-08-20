@@ -1,0 +1,35 @@
+{
+  "dataset": {
+    "rows": 8000,
+    "event_rate": 0.439375,
+    "train_rows": 6054,
+    "test_rows": 1946,
+    "temporal_split_entry_month": 17
+  },
+  "cox_ph": {
+    "c_index": 0.7965535521349562,
+    "brier_scores": {
+      "12": 0.05516613204862884,
+      "24": 0.11524882580738106,
+      "36": 0.143839062525634
+    },
+    "integrated_brier_proxy": 0.10475134012721464
+  },
+  "weibull_aft": {
+    "c_index": 0.7965545142386536,
+    "brier_scores": {
+      "12": 0.05526478449272634,
+      "24": 0.11512797162217801,
+      "36": 0.14382752738748664
+    },
+    "integrated_brier_proxy": 0.10474009450079698,
+    "shape": 2.0131859966499435,
+    "optimizer_converged": true
+  },
+  "selected_model": "cox_ph",
+  "kaplan_meier_logrank_p_value_high_vs_low_load": 0.0,
+  "risk_thresholds": {
+    "low_to_medium": 0.04582855239305961,
+    "medium_to_high": 0.12475764362584074
+  }
+}
